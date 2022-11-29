@@ -67,7 +67,8 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    //TODO  : Saat dilimi admin panelden değiştirilebilir şekilde yapılabilir.
+    'timezone' => 'Europe/Istanbul',
 
     /*
     |--------------------------------------------------------------------------
