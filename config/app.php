@@ -81,7 +81,8 @@ return [
     |
     */
 
-    'locale' => 'en',
+    //TODO  : Dil'i admin panelden değiştirilebilir şekilde yapılabilir.(Varsayılan dil ve çoklu dil sistemi)
+    'locale' => 'tr',
 
     /*
     |--------------------------------------------------------------------------
@@ -94,7 +95,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'tr',
 
     /*
     |--------------------------------------------------------------------------
@@ -107,7 +108,7 @@ return [
     |
     */
 
-    'faker_locale' => 'en_US',
+    'faker_locale' => 'tr_TR',
 
     /*
     |--------------------------------------------------------------------------
