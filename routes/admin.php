@@ -8,4 +8,5 @@ Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
         return view('admin.anasayfa');
     })->name('anasayfa');
 
+    Route::view('/profile/edit', 'admin.profile.edit')->name('profile.edit');
 });
