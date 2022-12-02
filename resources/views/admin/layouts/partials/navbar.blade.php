@@ -23,7 +23,10 @@
                 <a class="dropdown-item" href="#!">Settings</a>
                 <a class="dropdown-item" href="#!">Activity Log</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="login.html">Logout</a>
+                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit()">Çıkış Yap</a>
+                <form action="{{ route('logout') }}" id="logout-form" method="POST" style="display: none">
+                    @csrf
+                </form>
             </div>
         </li>
     </ul>
