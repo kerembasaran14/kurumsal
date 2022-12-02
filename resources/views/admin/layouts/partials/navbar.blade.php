@@ -19,6 +19,7 @@
                aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                 <a class="dropdown-item" href="{{ route('admin.profile.edit') }}">Profili Düzenle</a>
+                <a class="dropdown-item" href="{{ route('admin.password.edit') }}">Şifreyi Düzenle</a>
                 <a class="dropdown-item" href="#!">Settings</a>
                 <a class="dropdown-item" href="#!">Activity Log</a>
                 <div class="dropdown-divider"></div>

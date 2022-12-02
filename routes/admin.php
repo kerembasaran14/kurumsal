@@ -9,4 +9,5 @@ Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     })->name('anasayfa');
 
     Route::view('/profile/edit', 'admin.profile.edit')->name('profile.edit');
+    Route::view('/profile/password', 'admin.profile.password')->name('password.edit');
 });
