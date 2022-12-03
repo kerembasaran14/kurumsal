@@ -97,7 +97,7 @@ Route::group(['prefix' => 'admin', 'middleware' => config('fortify.middleware', 
     if (Features::enabled(Features::updateProfileInformation())) {
         Route::put('/user/profile-information', [ProfileInformationController::class, 'update'])
             ->middleware([config('fortify.auth_middleware', 'auth').':'.config('fortify.guard')])
-            ->name('user-profile-information.update');
+            ->name('user-profile-information.update')->middleware('password.confirm');
     }
 
     // Passwords...
