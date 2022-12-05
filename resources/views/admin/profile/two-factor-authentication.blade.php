@@ -43,7 +43,13 @@
                         <button class="btn btn-primary" type="submit">Aktif</button>
                     </form>
                 @endif
-
+                <hr>
+                <h3>Kurtarma Kodları :</h3>
+                <ul>
+                    @foreach(json_decode(decrypt(auth()->user()->two_factor_recovery_codes)) as $code)
+                        <li>{{ $code }}</li>
+                    @endforeach
+                </ul>
             </div>
         </div>
     </div>
