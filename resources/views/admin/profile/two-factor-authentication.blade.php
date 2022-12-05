@@ -29,6 +29,9 @@
         <div class="card mb-4">
             <div class="card-body">
                 @if(auth()->user()->two_factor_secret)
+                    <div class="mb-3">
+                        {!! auth()->user()->twoFactorQrCodeSvg() !!}
+                    </div>
                     <form action="{{ route('two-factor.disable') }}" method="POST">
                         @csrf
                         @method('DELETE')
