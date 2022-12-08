@@ -38,6 +38,20 @@
                         </span>
                         @enderror
                     </div>
+                    <div class="form-group">
+                        <label class="small mb-1" for="locale">Dil</label>
+                        <select name="locale" id="locale" class="form-control @error('locale') is-invalid @enderror">
+                            @foreach(App\Models\User::LOCALES as $locale => $label)
+                                <option value="{{ $locale }}" @if(Auth::user()->locale==$locale) selected @endif>{{ $label }}</option>
+                            @endforeach
+                                <option value="de">Deneme</option>
+                        </select>
+                        @error('locale')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                        @enderror
+                    </div>
                     <div class="form-group mt-4 mb-0">
                         <button type="submit" class="btn btn-primary btn-block">Profili Güncelle</button>
                     </div>

@@ -13,6 +13,11 @@ class User extends Authenticatable implements MustVerifyEmail
 {
     use HasApiTokens, HasFactory, Notifiable, TwoFactorAuthenticatable;
 
+    //TODO : Diller veri tabanına bağlanacak
+    public const LOCALES=[
+        'tr' => 'Türkçe',
+        'en' => 'İngilizce'
+    ];
     /**
      * The attributes that are mass assignable.
      *

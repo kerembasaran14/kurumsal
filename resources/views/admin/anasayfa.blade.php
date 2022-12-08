@@ -12,6 +12,18 @@
 @section('content')
     <div class="container-fluid">
         <h1 class="mt-4">Dashboard</h1>
+        <small>{{ __('deneme.text1') }}</small><br>
+        <small>{{ __('deneme.text2',['name'=> Auth::user()->name]) }}</small><br>
+        <small>{{ __('deneme.text2.1',['name'=> Auth::user()->name]) }}</small><br>
+        <small>{{ trans_choice('deneme.text3',0) }}</small><br>
+        <small>{{ trans_choice('deneme.text3',1) }}</small><br>
+        <small>{{ trans_choice('deneme.text3',2) }}</small><br>
+        <small>{{ trans_choice('deneme.text3',3) }}</small><br>
+        <small>{{ trans_choice('deneme.text4',0,['a'=>6]) }}</small><br>
+        <small>{{ trans_choice('deneme.text4',1,['a'=>6]) }}</small><br>
+        <small>{{ trans_choice('deneme.text4',2,['a'=>6]) }}</small><br>
+        <small>{{ trans_choice('deneme.text4',3,['a'=>6]) }}</small><br>
+
         <ol class="breadcrumb mb-4">
             <li class="breadcrumb-item active">Dashboard</li>
         </ol>
