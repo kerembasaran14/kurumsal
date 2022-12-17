@@ -23,7 +23,7 @@
         <small>{{ trans_choice('deneme.text4',1,['a'=>6]) }}</small><br>
         <small>{{ trans_choice('deneme.text4',2,['a'=>6]) }}</small><br>
         <small>{{ trans_choice('deneme.text4',3,['a'=>6]) }}</small><br>
-
+        {{ __('Web sitemize hoş geldiniz') }}
         <ol class="breadcrumb mb-4">
             <li class="breadcrumb-item active">Dashboard</li>
         </ol>

@@ -40,5 +40,12 @@ class LocaleMiddleware
 
         App::setLocale($locale);
         return $next($request);
+/*
+ * Örnek 2
+        if (Session::has('locale')) {
+            App::setLocale(Session::get('locale'));
+        }
+        return $next($request);
+*/
     }
 }
