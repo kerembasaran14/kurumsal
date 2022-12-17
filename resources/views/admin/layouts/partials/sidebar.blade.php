@@ -3,9 +3,9 @@
         <div class="sb-sidenav-menu">
             <div class="nav">
                 <div class="sb-sidenav-menu-heading">Core</div>
-                <a class="nav-link" href="index.html">
-                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                    Dashboard
+                <a class="nav-link" href="{{ route('admin.anasayfa') }}">
+                    <div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
+                    {{ __('all.anasayfa') }}
                 </a>
                 <div class="sb-sidenav-menu-heading">Interface</div>
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts"
@@ -71,7 +71,7 @@
             </div>
         </div>
         <div class="sb-sidenav-footer">
-            <div class="small">Oturum açan:</div>
+            <div class="small">{{ __('all.oturumAcan') }}</div>
             {{ Auth::user()->name }}
         </div>
     </nav>

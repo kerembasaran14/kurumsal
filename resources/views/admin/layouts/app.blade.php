@@ -8,7 +8,7 @@
     <meta name="author" content=""/>
     @yield('meta')
 
-    <title>@yield('title')</title>
+    <title>{{ config('app.name', 'Laravel') }} | @yield('title')</title>
 
     <link href="{{ asset('assets/admin/css/styles.css') }}" rel="stylesheet"/>
     @yield('cascadingStyleSheets')
